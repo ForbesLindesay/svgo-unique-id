@@ -14,14 +14,10 @@ refs:
       run:
         name: Install Dependencies
         command: yarn install --pure-lockfile
-    - &Build
-      run:
-        name: Build
-        command: yarn build
     - &Test
       run:
         name: Test
-        command: yarn ci:test
+        command: yarn test
 
 jobs:
   test:
@@ -31,7 +27,6 @@ jobs:
       - *Versions
       - *Install
       - *Test
-      - *Build
 
   publish:
     <<: *container
@@ -40,7 +35,6 @@ jobs:
       - *Versions
       - *Install
       - *Test
-      - *Build
       - run:
           name: NPM Auth
           command: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
