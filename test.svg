@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <path id="path-a" d="M 50,5 95,97.5 5,97.5 z" />
+        <path id="path-b" d="M 5,50 97.5,5 97.5,95 Z" />
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(12 12)">
+        <use fill="#FFF" xlink:href="#path-a"/>
+        <use fill="#FFF" xlink:href="#path-b"/>
+    </g>
+</svg>

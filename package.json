@@ -1,0 +1,16 @@
+{
+  "name": "svgo-unique-id",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "svgo": "^1.1.1"
+  },
+  "dependencies": {
+    "generate-alphabetic-name": "^1.0.0"
+  }
+}
